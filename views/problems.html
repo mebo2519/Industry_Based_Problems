@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="../resources/css/styleSheet.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../resources/js/script.js"></script>
+    <title>Problems</title>
+  </head>
+
+  <body onload="loadProblems()">
+
+<!-- Side nav for searching by subject -->
+<!-- https://www.w3schools.com/howto/howto_js_sidenav.asp -->
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#">Dynamics</a>
+      <a href="#">Heat Transfer</a>
+      <a href="#">Solids</a>
+      <a href="#">Statics</a>
+      <a href="#">Thermodynamics</a>
+    </div>
+
+    <div id="main">
+
+      <div class="header">
+        <img src="../resources/img/cu-boulder-logo-text-white.svg" alt="CU Boulder logo" style="height:30px;">
+      </div>
+
+
+    <!-- Nav bar -->
+    <!-- https://www.codeply.com/go/qhaBrcWp3v -->
+      <nav class="navbar navbar-expand-sm bg-dark navbar-dark justify-content-center">
+        <a class="navbar-brand" href="problems.html">Mechanical Eningeering | Industry-Based Problems</a>
+          <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
+              <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
+                <li class="nav-item">
+                  <a class="nav-link" href="problems.html">Home</a>
+                </li>
+              </ul>
+          </div>
+      </nav>
+      <span style="font-size:22px;cursor:pointer" onclick="openNav()">&#9776; Sort by subject</span>
+
+      <!-- Problems list -->
+      <div class="container">
+        <div class="card-columns" id="available_problems">
+          <!--Load problems from array/database onload: loadProblems -->
+        </div>
+      </div>
+      <br>
+      <br>
+
+      <!-- footer -->
+      <footer>
+        <img src="../resources/img/be-boulder-whitex320.png" alt="Be Boulder logo" style="height:20px;">
+      </footer>
+    </div>
+
+  </body>
+
+</html>
